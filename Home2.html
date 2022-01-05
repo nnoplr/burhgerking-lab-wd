@@ -1,0 +1,150 @@
+<!-- Nama : Novika Lourdes Rosellini
+     NIM  : 2301901835
+     Kelas: Web Design BB03 -->
+
+<!-- Referensi navbar 
+     https://www.youtube.com/watch?v=oLgtucwjVII -->
+<!-- Referensi side drawer
+     https://youtu.be/Z67ZYjLqrkE -->
+<!-- Referensi image slider
+     https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+<!-- Consistency:
+    - Navbar
+    - Title
+    - Color theme
+    - Centered layout
+    - Languange
+    - Hover animation -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BuRHger King</title>
+        <!-- External CSS -->
+        <link rel = "icon" href = ".\Asset\Logo.jpg">
+        <link rel="stylesheet" href="./CSS/allNav.css">
+        <link rel="stylesheet" href="./CSS/home2.css">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo"> 
+                <img src=".\Asset\Logo.jpg" alt="BuRHger King Logo">
+                <a>BuRHger King</a>
+            </div>
+    
+            <input type="checkbox" class="check" id="navBtn">
+            <label for="navBtn" class="icon">
+                <span class="hamburger"></span>
+            </label>
+    
+            <div class="navigation">
+                <span><a href="Home.html" class="navNow">Home</a></span>
+                <span><a href="Menu.html">Menu</a></span>
+                <span><a href="Order.html">Order</a></span>
+                <span><a href="ComSoon.html">Coming Soon Burger</a></span>
+                <span><a href="About.html">About Us</a></span>
+            </div>
+                 
+            <div class="bg"> </div>
+        </nav>
+    
+    
+        <div class="content">
+    
+            <!-- Slider -->
+            <div class="slidesContainer">
+                <div class="slideImgCont">
+                    <img class="slideImg" src="Asset/Home/HalloweenBurgerDay.png">
+                </div>
+        
+                <div class="slideImgCont">
+                    <img class="slideImg" src="Asset/Home/1.png">
+                </div>
+        
+                <div class="slideImgCont">
+                    <img class="slideImg" src="Asset/Home/2.png">
+                </div>
+        
+                <div class="indicatorContainer">
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+        
+                <div id="prevBtn">&#10094;</div>
+                <div id="nextBtn">&#10095;</div>
+        
+            </div>
+    
+            
+            <div class="otherContainer">
+                <!-- promotions -->
+            <section id="promotions">
+                <h1>Promotions</h1>
+                <div class="container">
+                    <div class="promItem">
+                        <div class="images">
+                            <img src=".\Asset\Home\Promotions\miniburgers.png" alt="Buy 2 mini burgers get 1 image">
+                        </div>
+                        <label>Buy 2 Mini Burgers Get 1</label>
+                    </div>
+                    <div class="promItem">
+                        <div class="images">
+                            <img src=".\Asset\Home\Promotions\burger cola.png" alt="Buy burger + cola free french fries image">
+                        </div>
+                        <label>Buy Burger & Cola Get French Fries</label>
+                    </div>
+                    <div class="promItem">
+                        <div class="images">
+                            <img src=".\Asset\Home\Promotions\3burgers.png" alt="Buy 3 discount 50% image">
+                        </div>
+                        <label>Buy 3 Discount 50%</label>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- news -->
+            <section id="news">
+                <h1>News</h1>
+                <div class="container">
+                    <div class="newsItem">
+                        <div class="images">
+                            <img src=".\Asset\Home\News\Delivery.jpeg" alt="Buy burger easier from website!">
+                        </div>
+                        <div class="labelBg"></div>
+                        <div class="labelContainer">
+                            <label>Buy burger easier from website!</label>
+                        </div>
+                    </div>
+                    <div class="newsItem">
+                        <div class="images">
+                            <img src=".\Asset\Home\News\Stars.png" alt="BuRHger King voted as the best burger restaurant">
+                        </div>
+                        <div class="labelBg"></div>
+                        <div class="labelContainer">
+                            <label>BuRHger King voted as the best burger restaurant</label>
+                        </div>
+                    </div>
+                    <div class="newsItem">
+                        <div class="images">
+                            <img src=".\Asset\Home\News\New-Opening-Hours.jpg" alt="BuRHger King voted as the best burger restaurant">
+                        </div>
+                        <div class="labelBg"></div>
+                        <div class="labelContainer">
+                            <label>Our operational hours</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+            
+            <script src="Script/jquery-3.5.1.js"></script>
+            <script src="Script/home2.js"></script>
+    
+        </div>
+    </body>
+    </html>

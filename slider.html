@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+         
+        .slidesContainer {
+            width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .slideImgCont {
+            display: none
+        }
+
+        .slideImg{
+            width: 100%;
+            /* vertical-align: middle; */
+        }
+        
+        #prevBtn, #nextBtn {
+            position: absolute;
+            top: 50%;
+            margin-top: -22px;
+            width: auto;
+            padding: 2vh;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 0 3px 3px 0;
+            transition: background-color 0.5s ease;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        #nextBtn {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        #prevBtn:hover, #nextBtn:hover {
+            background-color: rgb(250, 216, 89, 0.8);
+        }
+
+        .indicatorContainer {
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .indicator {
+            display: inline-block;
+            height: 2vh;
+            width: 2vh;
+            margin: 0 4px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            box-shadow: 0 0 10px white;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+
+        .active, .indicator:hover {
+            background-color: #fad859;
+        }
+
+        @media only screen and (max-width: 300px) {
+            #prevBtn, #nextBtn {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slidesContainer">
+        <div class="slideImgCont">
+            <img class="slideImg" src="Asset/Home/HalloweenBurgerDay.png">
+        </div>
+
+        <div class="slideImgCont">
+            <img class="slideImg" src="Asset/Home/1.png">
+        </div>
+
+        <div class="slideImgCont">
+            <img class="slideImg" src="Asset/Home/2.png">
+        </div>
+
+        <div class="indicatorContainer">
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+
+        <div id="prevBtn">&#10094;</div>
+        <div id="nextBtn">&#10095;</div>
+
+    </div>
+    <br>
+
+    <script src="Script/jquery-3.5.1.js"></script>
+    <script>
+        var slideIndex = 0;
+        var timer;
+        var slides = $(".slideImgCont");
+        var indicators = $(".indicator");
+        showSlides();
+
+        $("#prevBtn").click(function(){
+            plusSlides(slideIndex-=1);
+        });
+
+        $("#nextBtn").click(function(){
+            plusSlides(slideIndex+=1);
+        });
+
+        $(".indicator").click(function() {
+            var idx = $(this).index();
+            plusSlides(slideIndex = idx+1);
+        });
+
+        function showSlides() {
+            // alert(idx);
+            var i;
+            for (i = 0; i < slides.length; i++) {
+                slides.eq(i).hide();
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < indicators.length; i++) {
+                indicators.eq(i).removeClass('active');
+            }
+            slides.eq(slideIndex - 1).fadeIn("slow").show();
+            indicators.eq(slideIndex - 1).addClass('active');
+            timer = setTimeout(showSlides, 4000);
+        }
+
+        function plusSlides(){
+            clearTimeout(timer);
+            if (slideIndex> slides.length) {slideIndex = 1}
+            else if(slideIndex<1){slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides.eq(i).hide();
+            }
+            for (i = 0; i < indicators.length; i++) {
+                indicators.eq(i).removeClass('active');
+            }
+            slides.eq(slideIndex - 1).fadeIn("slow").show();
+            indicators.eq(slideIndex - 1).addClass('active');
+            timer = setTimeout(showSlides, 4000);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
