@@ -4,7 +4,7 @@
      Kelas: Web Design BB03 -->
 
 <!-- Referensi navbar 
-     https://www.youtube.com/watch?v=oLgtucwjVII -->
+     https://www.youtube.com/watch?v=RqM5Wzuil5U -->
 <!-- Referensi side drawer
      https://youtu.be/Z67ZYjLqrkE -->
 
@@ -24,33 +24,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuRHger King</title>
     <!-- External CSS -->
-    <link rel = "icon" href = ".\Asset\Logo.jpg">
+    <link rel="icon" href=".\Asset\Logo.jpg">
     <link rel="stylesheet" href="./CSS/allNav.css">
     <link rel="stylesheet" href="./CSS/home.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="logo"> 
-            <img src="Asset/Logo.png" alt="BuRHger King Logo">
-            <a>BuRHger King</a>
-        </div>
-
-        <input type="checkbox" class="check" id="navBtn">
-        <label for="navBtn" class="icon">
-            <span class="hamburger"></span>
-        </label>
-
-        <div class="navigation">
-            <span><a href="Home.html" class="navNow">Home</a></span>
-            <span><a href="Menu.html">Menu</a></span>
-            <span><a href="Order.html">Order</a></span>
-            <span><a href="ComSoon.html">Coming Soon Burger</a></span>
-            <span><a href="About.html">About Us</a></span>
-        </div>
-             
-        <div class="bg"> </div>
-    </nav>
-
+    <header class="header">
+        <a href="Home.html">
+            <img id="logo" alt="Logo" src="Asset/Logo.png">
+            <a id="logo-text">BuRHger King</a>
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="Csoon.html">Coming Soon</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </header>
 
     <div class="content">
 
@@ -139,5 +132,12 @@
         <script src="Script/home.js"></script>
 
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Developed by Novika & Nabilla.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

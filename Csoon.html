@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <!-- External CSS -->
+    <link rel="icon" href=".\Asset\Logo.jpg">
+    <link rel="stylesheet" href="./CSS/allNav.css">
+    <link rel="stylesheet" href="./CSS/csoon.css">
+</head>
+<body onload="draw();">
+    <header class="header">
+        <a href="Home.html">
+            <img id="logo" alt="Logo" src="Asset/Logo.png">
+            <a id="logo-text">BuRHger King</a>
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="Csoon.html" class="active">Coming Soon</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <h1>Coming Soon</h1>
+        <br>
+        <center>
+            <canvas id="canvas" width="500" height="350">
+                <img src="Asset/Csoon/burger-canvas.png" class="canvasImg">
+            </canvas>
+        </center>
+        <br><br>
+        <div class="vid-responsive">
+            <center>
+                <video id="vid1" height="280" src="Asset/Csoon/food_film_2.mp4" controls allowfullscreen></video>
+                <video id="vid2" height="280" src="Asset/Csoon/food_film_3.mp4" controls allowfullscreen></video>
+                <video id="vid3" height="280" src="Asset/Csoon/food_film_1.mp4" controls allowfullscreen></video>
+            </center>
+        </div>
+        <div class="vid-big">
+            <center>
+                <video id="vid1" height="220" src="Asset/Csoon/food_film_2.mp4" controls allowfullscreen></video>
+                <video id="vid2" height="220" src="Asset/Csoon/food_film_3.mp4" controls allowfullscreen></video>
+                <video id="vid3" height="220" src="Asset/Csoon/food_film_1.mp4" controls allowfullscreen></video>
+            </center>
+        </div>
+        <br><br>
+    </div>
+    <script src="Script/csoon.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <p>Developed by Novika & Nabilla.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
