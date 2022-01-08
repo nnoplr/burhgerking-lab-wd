@@ -4,98 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuRHger King - Order</title>
+    <title>Order</title>
     <!-- External CSS -->
-    <link rel = "icon" href = "Asset/Logo.png">
-    <link rel="stylesheet" href="CSS/allNav.css">
+    <link rel="icon" href="Asset/Logo.png">
+    <link rel="stylesheet" href="./CSS/allNav.css">
     <link rel="stylesheet" href="CSS/order.css">
-    
 </head>
 <body>
+
     <header class="header">
-        <a href="Home.html">
+        <a href="index.html">
             <img id="logo" alt="Logo" src="Asset/Logo.png">
-            <a id="logo-text">BuRHger King</a>
         </a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
         <ul class="menu">
-            <li><a href="Home.html" class="active">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="order.html">Order</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Order.html"active">Order</a></li>
             <li><a href="Csoon.html">Coming Soon</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="About.html">About Us</a></li>
         </ul>
     </header>
 
-    <div class="content">
-        <h1>Order your burgers!</h1>  
-        <section class="Order">
+    <div class="ordertitle">
+        <h1>Your Order</h1>
+        <div class="orderform">
             <form onsubmit = "return validate()">
-                <!-- full name -->
-                <div class="field-container">
-                    <input type="text" id="name" placeholder="Full Name">
+                <div class="container">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" placeholder="Mr./Mrs./Ms.">
                     <label class="errorMsg" id="errorName"></label>
                 </div>
-
-                <!-- email  -->
-                <div class="field-container">
-                    <input type="email" id="email" placeholder="Email">
+                <div class="container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@bhurger.com">
                     <label class="errorMsg" id="errorEmail"></label>
                 </div>
-
-                <!-- selected burger -->
-                <div class="field-container">
-                    <label for="selectedBurger">Order:</label>
-                    <select id="selectedBurger">
-                        <option value="">-- Select Order --</option>
-                        <option value="Beef Bacon">Beef Bacon</option>
-                        <option value="Chick O' Beef">Chick O' Beef</option>
-                        <option value="Minigers">Minigers</option>
-                        <option value="Sunny Side Chick">Sunny Side Chick</option>
-                        <option value="Croigers">Croigers</option>
-                        <option value="The Regular">The Regular</option>
-                        <option value="Chickbuns">Chickbuns</option>
-                        <option value="French Fries">French Fries</option>
-                        <option value="Cola">Cola</option>
-                    </select>
-                    <label class="errorMsg" id="errorOrder"></label>
+                <br>
+                <div class="container">
+                    <label for="egg-burger-qty">Egg Burger</label>
+                    <input type="number" class="Qty" id="egg-burger-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-egg-burger-qty"></label>
                 </div>
-
-                <!-- quantity -->
-                <div class="field-container" id="qtyField">
-                    <label for="qty">Quantity:</label>
-                    <label class="note">*max 10pcs per item</label>
-                    <input type="number" id="qty" placeholder="1">
-                    <label class="errorMsg" id="errorQty"></label>
+                <div class="container">
+                    <label for="meat-burger-qty">Meat Burger</label>
+                    <input type="number" class="Qty" id="meat-burger-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-meat-burger-qty"></label>
+                     </div>
+                <div class="container">
+                    <label for="cheese-burger-qty">Cheese Burger</label>
+                    <input type="number" class="Qty" id="cheese-burger-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-cheese-burger-qty"></label>
+                </div>
+                <div class="container">
+                    <label for="spicy-burger-qty">Spicy Burger</label>
+                    <input type="number" class="Qty" id="spicy-burger-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-spicy-burger-qty"></label>
+                </div>
+                <div class="container">
+                    <label for="chicken-burger-qty">Chicken Burger</label>
+                    <input type="number" class="Qty" id="chicken-burger-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-chicken-burger-qty"></label>
+                </div>
+                <div class="container">
+                    <label for="vege-burger-qty">Vegetarian Burger</label>
+                    <input type="number" class="Qty" id="vege-burger-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-vege-burger-qty"></label>
+                </div>
+                <div class="container">
+                    <label for="mini-burger-qty">Mini Burger</label>
+                    <input type="number" class="Qty" id="mini-burger-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-mini-burger-qty"></label>
+                </div>
+                <div class="container">
+                    <label for="french-fries-qty">French Fries</label>
+                    <input type="number" class="Qty" id="french-fries-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-french-fries-qty"></label>
+                </div>
+                <div class="container">
+                    <label for="juice-qty">Juice</label>
+                    <input type="number" class="Qty" id="juice-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-juice-qty"></label>
+                </div>
+                <div class="container">
+                    <label for="cola-qty">Cola</label>
+                    <input type="number" class="Qty" id="cola-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-cola-qty"></label>
+                </div>
+                <div class="container">
+                    <label for="ice-cream-qty">Ice Cream</label>
+                    <input type="number" class="Qty" id="ice-cream-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-ice-cream-qty"></label>
+                </div>
+                <div class="container">
+                    <label for="min-water-qty">Mineral Water</label>
+                    <input type="number" class="Qty" id="min-water-qty" placeholder="0">
+                    <label class="errorMsg errorQty" id="error-min-water-qty"></label>
+                </div>
+                <label class="errorMsg" id="errorOrder"></label>
+                <br>
+                <div class="container">
+                    <label for="promo">Choose a promo:</label>
+                    <select id="promo">
+                        <option value="none">None</option>
+                        <option value="2mini">Buy 2 Mini Burgers Get 1</option>
+                        <option value="burgercola">Buy Burger & Cola Get French Fries</option>
+                        <option value="3discount">Buy 3 Burger, Discount 50%</option>
+                    </select>
                 </div>
 
                 <!-- address -->
-                <div class="field-container">
+                <div class="container">
+                    <label for="address">Address</label>
                     <input type="text" id="address" placeholder="Address">
                     <label class="errorMsg" id="errorAddress"></label>
                 </div>
 
                 <!-- terms and conditions -->
-                <div class="field-container" id="agreementContainer">
+                <div class="container" id="agreementContainer">
                     <input type="checkbox" id="agreement">
                     <label for="agreement" class="agreementLabel">I agree with terms and conditions</label>
                     <div><label class="errorMsg" id="errorAgreement"></label></div>
                 </div>
 
-                <!-- button submit dan reset -->
-                <div class="buttonContainer">
-                    <button type="submit" class="submit">Place Order</button>
-                    <button type="reset" class="reset">Reset Form</button>
+                <div class="container">
+                    
+                        <button type="submit">Submit Order</button>
+                        <button class="resetBtn" type="reset">Reset Order</button>
                 </div>
             </form>
-        </section>
+        </div>
     </div>
-    <script src="Script/order.js"></script>
+
     <footer>
         <div class="footer-content">
-            <p>Developed by Novika & Nabilla.</p>
+            <p>Developed by Nabilla Driesandia Azarine (2301846383).</p>
         </div>
     </footer>
+    <script src="Script/order.js"></script>
 </body>
 </html>
