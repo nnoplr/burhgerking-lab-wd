@@ -87,7 +87,7 @@ function validate(){
     }
     else if(x.value.length < 3 || x.value.length > 50){
         // alert( "Please provide your name!" )
-        document.getElementById('errorName').innerHTML = "Please input 3 to 50 characters";
+        document.getElementById('errorAddress').innerHTML = "Please input 3 to 50 characters";
         x.classList.add("errorInput");
         x.focus();
         return false;
