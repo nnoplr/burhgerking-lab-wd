@@ -1,5 +1,4 @@
-var qty = document.getElementById("qty");
-qty.on
+
 function validate(){
 
     var errorMsg = document.getElementsByClassName('errorMsg');
