@@ -96,10 +96,12 @@ h1{
     text-align: center;
     font-size: x-large;
     margin: 10px;
+    color: white;
 }
 
 label{
     font-size: larger;
+    color: white;
 }
 
 .promItem, .newsItem{
