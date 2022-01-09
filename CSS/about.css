@@ -4,3 +4,43 @@ div.content {
     background-position: center center;
     margin-top: -4px;
 }
+
+body, html, .content {
+    height: 99.1%;
+}
+
+h3 {
+    color: white;
+    font-size: 35px;
+}
+
+.row1 {
+    display: grid;
+    height: auto;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.col1 {
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 15px;
+    background: black;
+    border-radius: 20px;
+    background-size: contain;
+}
+
+#label1 {
+    color: #fad859;
+    line-height: 1.25;
+}
+
+#logo-about {
+    width: 20%;
+}
