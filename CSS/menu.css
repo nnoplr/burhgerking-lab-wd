@@ -103,3 +103,27 @@ p {
 .card14 {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/water.jpeg);
 }
+
+#menuu::before, #menuu::after {
+    --scale: 0;
+    position: absolute;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 50ms transform;
+}
+
+#menuu::before {
+    content: attr(data-tooltip);
+    color: #fad859;
+    padding: 10px;
+    width: 250px;
+    height: max-content;
+    max-width: 100%;
+    background: black;
+    border-radius: 10px;
+    text-align: justify;
+    font-size: small;
+}
+
+#menuu:hover::before {
+    --scale: 1;
+}
