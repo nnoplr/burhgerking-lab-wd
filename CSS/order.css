@@ -7,8 +7,8 @@ body {
     background-position: center center;
   }
 
-h1{
-    color: #fad859;
+h1 {
+    color: white;
 }
 
 button {
@@ -45,12 +45,12 @@ button:hover {
 
 label {
     color: rgb(250, 216, 89, 0.7);
-    font-size: 14px;
+    font-size: 20px;
 }
 
 input {
     background: transparent;
-    font-size: 14px;
+    font-size: 20px;
     color: white;
     border: none;
     border-bottom: 1px solid #a35233;
@@ -132,4 +132,27 @@ option{
 }
 .errorInput:focus{
     outline: none;
+}
+
+@media only screen and (max-width: 1024px){
+    label {
+        font-size: 16px;
+    }
+    
+    input {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    label {
+        font-size: 14px;
+    }
+    
+    input {
+        font-size: 14px;
+    }
+    .ordertitle {    
+        padding: 70px 70px;
+    }
 }
