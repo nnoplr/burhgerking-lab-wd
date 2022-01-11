@@ -11,7 +11,7 @@ div.content {
     margin: 0;
     padding: 0;
     background: black;
-    border: solid #fad859 1px;
+    border-radius: 20px;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
 }
 
 #vid1, #vid2, #vid3 {
-    border: solid #fad859 1px;
+    border-radius: 20px;
 }
 
 .vid-big {
