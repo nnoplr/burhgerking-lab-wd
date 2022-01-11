@@ -27,19 +27,39 @@ h1 {
 }
 
 .vid-big {
-    display: none;
-}
-
-.vid-responsive {
     display: block;
 }
 
-@media (min-width: 64em) {
+.vid-responsive {
+    display: none;
+}
+
+/* @media (min-width: 64em) {
     .vid-responsive {
         display: none;
     }
 
     .vid-big {
         display: block;
+    }
+} */
+
+@media only screen and (max-width: 1024px){
+    .vid-responsive {
+        display: block;
+    }
+
+    .vid-big {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    canvas{
+        width: 80%;
+        
+    }
+    #vid1, #vid2, #vid3 {
+        height: 120px;
     }
 }
