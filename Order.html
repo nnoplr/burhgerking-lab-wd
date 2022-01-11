@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="CSS/order.css">
 </head>
 <body>
-
     <header class="header">
-        <a href="index.html">
+        <a href="Home.html">
             <img id="logo" alt="Logo" src="Asset/Logo.png">
+            <a id="logo-text">BuRHger King</a>
         </a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
         <ul class="menu">
             <li><a href="Home.html">Home</a></li>
             <li><a href="Menu.html">Menu</a></li>
-            <li><a href="Order.html"active">Order</a></li>
+            <li><a href="Order.html" class="active">Order</a></li>
             <li><a href="Csoon.html">Coming Soon</a></li>
             <li><a href="About.html">About Us</a></li>
         </ul>
@@ -29,6 +29,7 @@
 
     <div class="ordertitle">
         <h1>Your Order</h1>
+        <br>
         <div class="orderform">
             <form onsubmit = "return validate()">
                 <div class="container">
@@ -139,7 +140,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>Developed by Nabilla Driesandia Azarine (2301846383).</p>
+            <p id="footer">Developed by Novika & Nabilla.</p>
         </div>
     </footer>
     <script src="Script/order.js"></script>

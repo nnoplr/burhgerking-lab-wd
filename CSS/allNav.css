@@ -156,5 +156,9 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+#footer {
+    color: white;
     padding: 5px 0;
 }
