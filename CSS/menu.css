@@ -10,9 +10,15 @@ h3 {
     font-size: 35px;
 }
 
+h5 {
+    padding-top: 15px;
+    font-size: 15px;
+}
+
 p {
     color: white;
-    font-size: 11px;
+    font-size: 12px;
+    padding-top: 6px;
     text-align: left;
 }
 
@@ -65,43 +71,55 @@ p {
 }
 
 .card5 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/egg.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/egg.jpeg);
 }
 
 .card6 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/meat.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/meat.jpeg);
 }
 
 .card7 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/cheese.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/cheese.jpeg);
 }
 
 .card8 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/spicy_2.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/spicy_2.jpeg);
 }
 
 .card9 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/chicken.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/chicken.jpeg);
 }
 
 .card10 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/vegan.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/vegan.jpeg);
 }
 
 .card11 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/juice.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/juice.jpeg);
 }
 
 .card12 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/soda.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/soda.jpeg);
 }
 
 .card13 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/icecream.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/icecream.jpeg);
 }
 
 .card14 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/Menu/water.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/water.jpeg);
+}
+
+.card15 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/mini.jpeg);
+}
+
+.card16 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/fries.jpeg);
+}
+
+#menuu {
+    background-size: cover;
 }
 
 #menuu::before, #menuu::after {
