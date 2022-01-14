@@ -12,12 +12,12 @@ h3 {
 
 h5 {
     padding-top: 15px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 p {
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     padding-top: 6px;
     text-align: left;
 }
@@ -144,4 +144,23 @@ p {
 
 #menuu:hover::before {
     --scale: 1;
+}
+@media only screen and (max-width: 1024px){
+    h5 {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    h5 {
+        font-size: 15px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
 }
