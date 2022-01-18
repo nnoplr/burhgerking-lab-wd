@@ -71,7 +71,7 @@ p {
 }
 
 .card5 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/egg.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/egg.jpg);
 }
 
 .card6 {
@@ -111,11 +111,11 @@ p {
 }
 
 .card15 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/mini.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/mini.jpg);
 }
 
 .card16 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/fries.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Asset/Menu/fries.jpg);
 }
 
 #menuu {
